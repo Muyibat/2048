@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="cloud.jpg" as="image" />
+    <link rel="preload" href="index.html" as="document" />
+    <link rel="preload" href="hint.html" as="document" />
+    <link rel="preload" href="video.html" as="document" />
+    <script
+      src="https://kit.fontawesome.com/ec88d0c7ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>2048</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hint.html">How to play (Text)</a></li>
+          <li><a href="video.html">How to play (Video)</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="game">
+      <div class="score">
+        <div>Score: <span id="current-score">0</span></div>
+        <div>High Score: <span id="high-score">0</span></div>
+      </div>
+
+      <div class="game-board" id="game-board"></div>
+
+      <div id="game-over">
+        <h1>Game Over!</h1>
+        <button id="restart">Restart Game</button>
+      </div>
+    </section>
+
+    <footer>
+      <i class="fa-solid fa-copyright"></i>
+      <h4>Designed by Muyibat Nofiu</h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

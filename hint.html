@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How To Play</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="cloud.jpg" as="image" />
+    <link rel="preload" href="index.html" as="document" />
+    <link rel="preload" href="hint.html" as="document" />
+    <link rel="preload" href="video.html" as="document" />
+    <script
+      src="https://kit.fontawesome.com/ec88d0c7ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>2048</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hint.html">How to play (Text)</a></li>
+          <li><a href="video.html">How to play (Video)</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="wrapper">
+        <h1>How to Play 2048</h1>
+        <h2>Objective</h2>
+        <p>
+          Your goal in 2048 is to combine numbered tiles on the grid to reach
+          the tile labeled 2048 (or higher if you're feeling competitive!).
+        </p>
+
+        <h2>Gameplay Steps</h2>
+
+        <h3>Starting the Game</h3>
+        <p>
+          When you begin, you'll see a 4x4 grid with two tiles already placed on
+          the board, usually with the numbers 2 or 4. These numbers will
+          increase as you combine tiles.
+        </p>
+
+        <h3>Moving Tiles</h3>
+        <p>
+          Use the arrow keys on your keyboard (or swipe on mobile) to move the
+          tiles in one of four directions: up, down, left, or right.
+        </p>
+        <h4>When you move the tiles:</h4>
+
+        <p>
+          All tiles on the grid will shift in the direction you chose. New tiles
+          (usually a 2 or 4) will appear in an empty space on the board after
+          every move.
+        </p>
+        <h3>Merging Tiles</h3>
+
+        <p>
+          If two tiles with the same number touch, they combine into a single
+          tile with double the value. For example, if you move two 2 tiles
+          together, they’ll merge into a 4 tile. Continue merging tiles to
+          create higher numbers. The larger the number, the closer you are to
+          winning!
+        </p>
+        <h3>Strategy Tips</h3>
+
+        <p>
+          <strong>Plan ahead:</strong> Each move adds a new tile, so be careful
+          not to fill up the board too quickly. If the grid becomes full and
+          there are no more moves left, you'll lose.
+        </p>
+        <p>
+          <strong>Think about merging wisely:</strong> Try to keep higher-value
+          tiles together in a corner or along one side, which will make it
+          easier to merge them.
+        </p>
+        <p>
+          <strong>Keep the grid organized:</strong> Avoid spreading out tiles
+          too much. Merging tiles strategically will create larger numbers more
+          efficiently.
+        </p>
+
+        <h2>Winning the Game</h2>
+
+        <p>
+          When you create a tile with the number 2048, you win! But the game
+          doesn't have to stop there—you can continueplaying to reach even
+          higher numbers, such as 4096 or more.
+        </p>
+        <h2>Losing the Game</h2>
+
+        <p>
+          If the grid is completely filled with tiles, and there are no more
+          moves left (i.e., no adjacent tiles with the same number), the game is
+          over.
+        </p>
+        <h2>Good Luck! Have fun playing, and remember: every move counts!</h2>
+      </div>
+    </div>
+
+    <footer>
+      <i class="fa-solid fa-copyright"></i>
+      <h4>Designed by Muyibat Nofiu</h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
